@@ -21,7 +21,11 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='object_detection.protos',
   syntax='proto2',
   serialized_options=None,
+<<<<<<< Updated upstream
   serialized_pb=_b('\n#object_detection/protos/model.proto\x12\x17object_detection.protos\x1a)object_detection/protos/faster_rcnn.proto\x1a!object_detection/protos/ssd.proto\"\xcc\x01\n\x0e\x44\x65tectionModel\x12:\n\x0b\x66\x61ster_rcnn\x18\x01 \x01(\x0b\x32#.object_detection.protos.FasterRcnnH\x00\x12+\n\x03ssd\x18\x02 \x01(\x0b\x32\x1c.object_detection.protos.SsdH\x00\x12H\n\x12\x65xperimental_model\x18\x03 \x01(\x0b\x32*.object_detection.protos.ExperimentalModelH\x00\x42\x07\n\x05model\"!\n\x11\x45xperimentalModel\x12\x0c\n\x04name\x18\x01 \x01(\t')
+=======
+  serialized_pb=_b('\n#object_detection/protos/model.proto\x12\x17object_detection.protos\x1a)object_detection/protos/faster_rcnn.proto\x1a!object_detection/protos/ssd.proto\"\x82\x01\n\x0e\x44\x65tectionModel\x12:\n\x0b\x66\x61ster_rcnn\x18\x01 \x01(\x0b\x32#.object_detection.protos.FasterRcnnH\x00\x12+\n\x03ssd\x18\x02 \x01(\x0b\x32\x1c.object_detection.protos.SsdH\x00\x42\x07\n\x05model')
+>>>>>>> Stashed changes
   ,
   dependencies=[object__detection_dot_protos_dot_faster__rcnn__pb2.DESCRIPTOR,object__detection_dot_protos_dot_ssd__pb2.DESCRIPTOR,])
 
@@ -49,6 +53,7 @@ _DETECTIONMODEL = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+<<<<<<< Updated upstream
     _descriptor.FieldDescriptor(
       name='experimental_model', full_name='object_detection.protos.DetectionModel.experimental_model', index=2,
       number=3, type=11, cpp_type=10, label=1,
@@ -56,6 +61,8 @@ _DETECTIONMODEL = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+=======
+>>>>>>> Stashed changes
   ],
   extensions=[
   ],
@@ -72,6 +79,7 @@ _DETECTIONMODEL = _descriptor.Descriptor(
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=143,
+<<<<<<< Updated upstream
   serialized_end=347,
 )
 
@@ -104,22 +112,32 @@ _EXPERIMENTALMODEL = _descriptor.Descriptor(
   ],
   serialized_start=349,
   serialized_end=382,
+=======
+  serialized_end=273,
+>>>>>>> Stashed changes
 )
 
 _DETECTIONMODEL.fields_by_name['faster_rcnn'].message_type = object__detection_dot_protos_dot_faster__rcnn__pb2._FASTERRCNN
 _DETECTIONMODEL.fields_by_name['ssd'].message_type = object__detection_dot_protos_dot_ssd__pb2._SSD
+<<<<<<< Updated upstream
 _DETECTIONMODEL.fields_by_name['experimental_model'].message_type = _EXPERIMENTALMODEL
+=======
+>>>>>>> Stashed changes
 _DETECTIONMODEL.oneofs_by_name['model'].fields.append(
   _DETECTIONMODEL.fields_by_name['faster_rcnn'])
 _DETECTIONMODEL.fields_by_name['faster_rcnn'].containing_oneof = _DETECTIONMODEL.oneofs_by_name['model']
 _DETECTIONMODEL.oneofs_by_name['model'].fields.append(
   _DETECTIONMODEL.fields_by_name['ssd'])
 _DETECTIONMODEL.fields_by_name['ssd'].containing_oneof = _DETECTIONMODEL.oneofs_by_name['model']
+<<<<<<< Updated upstream
 _DETECTIONMODEL.oneofs_by_name['model'].fields.append(
   _DETECTIONMODEL.fields_by_name['experimental_model'])
 _DETECTIONMODEL.fields_by_name['experimental_model'].containing_oneof = _DETECTIONMODEL.oneofs_by_name['model']
 DESCRIPTOR.message_types_by_name['DetectionModel'] = _DETECTIONMODEL
 DESCRIPTOR.message_types_by_name['ExperimentalModel'] = _EXPERIMENTALMODEL
+=======
+DESCRIPTOR.message_types_by_name['DetectionModel'] = _DETECTIONMODEL
+>>>>>>> Stashed changes
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 DetectionModel = _reflection.GeneratedProtocolMessageType('DetectionModel', (_message.Message,), dict(
@@ -129,6 +147,7 @@ DetectionModel = _reflection.GeneratedProtocolMessageType('DetectionModel', (_me
   ))
 _sym_db.RegisterMessage(DetectionModel)
 
+<<<<<<< Updated upstream
 ExperimentalModel = _reflection.GeneratedProtocolMessageType('ExperimentalModel', (_message.Message,), dict(
   DESCRIPTOR = _EXPERIMENTALMODEL,
   __module__ = 'object_detection.protos.model_pb2'
@@ -136,5 +155,7 @@ ExperimentalModel = _reflection.GeneratedProtocolMessageType('ExperimentalModel'
   ))
 _sym_db.RegisterMessage(ExperimentalModel)
 
+=======
+>>>>>>> Stashed changes
 
 # @@protoc_insertion_point(module_scope)

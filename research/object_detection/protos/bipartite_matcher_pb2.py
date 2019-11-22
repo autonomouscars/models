@@ -19,7 +19,11 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='object_detection.protos',
   syntax='proto2',
   serialized_options=None,
+<<<<<<< Updated upstream
   serialized_pb=_b('\n/object_detection/protos/bipartite_matcher.proto\x12\x17object_detection.protos\"4\n\x10\x42ipartiteMatcher\x12 \n\x11use_matmul_gather\x18\x06 \x01(\x08:\x05\x66\x61lse')
+=======
+  serialized_pb=_b('\n/object_detection/protos/bipartite_matcher.proto\x12\x17object_detection.protos\"\x12\n\x10\x42ipartiteMatcher')
+>>>>>>> Stashed changes
 )
 
 
@@ -32,6 +36,7 @@ _BIPARTITEMATCHER = _descriptor.Descriptor(
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
+<<<<<<< Updated upstream
     _descriptor.FieldDescriptor(
       name='use_matmul_gather', full_name='object_detection.protos.BipartiteMatcher.use_matmul_gather', index=0,
       number=6, type=8, cpp_type=7, label=1,
@@ -39,6 +44,8 @@ _BIPARTITEMATCHER = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+=======
+>>>>>>> Stashed changes
   ],
   extensions=[
   ],
@@ -52,7 +59,11 @@ _BIPARTITEMATCHER = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=76,
+<<<<<<< Updated upstream
   serialized_end=128,
+=======
+  serialized_end=94,
+>>>>>>> Stashed changes
 )
 
 DESCRIPTOR.message_types_by_name['BipartiteMatcher'] = _BIPARTITEMATCHER

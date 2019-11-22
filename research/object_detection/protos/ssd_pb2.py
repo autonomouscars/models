@@ -17,8 +17,13 @@ from object_detection.protos import box_coder_pb2 as object__detection_dot_proto
 from object_detection.protos import box_predictor_pb2 as object__detection_dot_protos_dot_box__predictor__pb2
 from object_detection.protos import hyperparams_pb2 as object__detection_dot_protos_dot_hyperparams__pb2
 from object_detection.protos import image_resizer_pb2 as object__detection_dot_protos_dot_image__resizer__pb2
+<<<<<<< Updated upstream
 from object_detection.protos import losses_pb2 as object__detection_dot_protos_dot_losses__pb2
 from object_detection.protos import matcher_pb2 as object__detection_dot_protos_dot_matcher__pb2
+=======
+from object_detection.protos import matcher_pb2 as object__detection_dot_protos_dot_matcher__pb2
+from object_detection.protos import losses_pb2 as object__detection_dot_protos_dot_losses__pb2
+>>>>>>> Stashed changes
 from object_detection.protos import post_processing_pb2 as object__detection_dot_protos_dot_post__processing__pb2
 from object_detection.protos import region_similarity_calculator_pb2 as object__detection_dot_protos_dot_region__similarity__calculator__pb2
 
@@ -28,13 +33,20 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='object_detection.protos',
   syntax='proto2',
   serialized_options=None,
+<<<<<<< Updated upstream
   serialized_pb=_b('\n!object_detection/protos/ssd.proto\x12\x17object_detection.protos\x1a.object_detection/protos/anchor_generator.proto\x1a\'object_detection/protos/box_coder.proto\x1a+object_detection/protos/box_predictor.proto\x1a)object_detection/protos/hyperparams.proto\x1a+object_detection/protos/image_resizer.proto\x1a$object_detection/protos/losses.proto\x1a%object_detection/protos/matcher.proto\x1a-object_detection/protos/post_processing.proto\x1a:object_detection/protos/region_similarity_calculator.proto\"\xdc\x0b\n\x03Ssd\x12\x13\n\x0bnum_classes\x18\x01 \x01(\x05\x12<\n\rimage_resizer\x18\x02 \x01(\x0b\x32%.object_detection.protos.ImageResizer\x12G\n\x11\x66\x65\x61ture_extractor\x18\x03 \x01(\x0b\x32,.object_detection.protos.SsdFeatureExtractor\x12\x34\n\tbox_coder\x18\x04 \x01(\x0b\x32!.object_detection.protos.BoxCoder\x12\x31\n\x07matcher\x18\x05 \x01(\x0b\x32 .object_detection.protos.Matcher\x12R\n\x15similarity_calculator\x18\x06 \x01(\x0b\x32\x33.object_detection.protos.RegionSimilarityCalculator\x12)\n\x1a\x65ncode_background_as_zeros\x18\x0c \x01(\x08:\x05\x66\x61lse\x12 \n\x15negative_class_weight\x18\r \x01(\x02:\x01\x31\x12<\n\rbox_predictor\x18\x07 \x01(\x0b\x32%.object_detection.protos.BoxPredictor\x12\x42\n\x10\x61nchor_generator\x18\x08 \x01(\x0b\x32(.object_detection.protos.AnchorGenerator\x12@\n\x0fpost_processing\x18\t \x01(\x0b\x32\'.object_detection.protos.PostProcessing\x12+\n\x1dnormalize_loss_by_num_matches\x18\n \x01(\x08:\x04true\x12-\n\x1enormalize_loc_loss_by_codesize\x18\x0e \x01(\x08:\x05\x66\x61lse\x12+\n\x04loss\x18\x0b \x01(\x0b\x32\x1d.object_detection.protos.Loss\x12\x1f\n\x10\x66reeze_batchnorm\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\'\n\x18inplace_batchnorm_update\x18\x0f \x01(\x08:\x05\x66\x61lse\x12\"\n\x14\x61\x64\x64_background_class\x18\x15 \x01(\x08:\x04true\x12(\n\x19\x65xplicit_background_class\x18\x18 \x01(\x08:\x05\x66\x61lse\x12)\n\x1ause_confidences_as_targets\x18\x16 \x01(\x08:\x05\x66\x61lse\x12\"\n\x17implicit_example_weight\x18\x17 \x01(\x02:\x01\x31\x12\x33\n$return_raw_detections_during_predict\x18\x1a \x01(\x08:\x05\x66\x61lse\x12?\n\x10mask_head_config\x18\x19 \x01(\x0b\x32%.object_detection.protos.Ssd.MaskHead\x1a\x84\x03\n\x08MaskHead\x12\x17\n\x0bmask_height\x18\x01 \x01(\x05:\x02\x31\x35\x12\x16\n\nmask_width\x18\x02 \x01(\x05:\x02\x31\x35\x12&\n\x18masks_are_class_agnostic\x18\x03 \x01(\x08:\x04true\x12\'\n\x1amask_prediction_conv_depth\x18\x04 \x01(\x05:\x03\x32\x35\x36\x12*\n\x1fmask_prediction_num_conv_layers\x18\x05 \x01(\x05:\x01\x32\x12+\n\x1c\x63onvolve_then_upsample_masks\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x10mask_loss_weight\x18\x07 \x01(\x02:\x01\x35\x12!\n\x15mask_loss_sample_size\x18\x08 \x01(\x05:\x02\x31\x36\x12>\n\x10\x63onv_hyperparams\x18\t \x01(\x0b\x32$.object_detection.protos.Hyperparams\x12\x1d\n\x11initial_crop_size\x18\n \x01(\x05:\x02\x31\x35\"\xc3\x03\n\x13SsdFeatureExtractor\x12\x0c\n\x04type\x18\x01 \x01(\t\x12\x1b\n\x10\x64\x65pth_multiplier\x18\x02 \x01(\x02:\x01\x31\x12\x15\n\tmin_depth\x18\x03 \x01(\x05:\x02\x31\x36\x12>\n\x10\x63onv_hyperparams\x18\x04 \x01(\x0b\x32$.object_detection.protos.Hyperparams\x12:\n+override_base_feature_extractor_hyperparams\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0fpad_to_multiple\x18\x05 \x01(\x05:\x01\x31\x12#\n\x14use_explicit_padding\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\ruse_depthwise\x18\x08 \x01(\x08:\x05\x66\x61lse\x12<\n\x03\x66pn\x18\n \x01(\x0b\x32/.object_detection.protos.FeaturePyramidNetworks\x12\x34\n%replace_preprocessor_with_placeholder\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x15\n\nnum_layers\x18\x0c \x01(\x05:\x01\x36J\x04\x08\x06\x10\x07\"i\n\x16\x46\x65\x61turePyramidNetworks\x12\x14\n\tmin_level\x18\x01 \x01(\x05:\x01\x33\x12\x14\n\tmax_level\x18\x02 \x01(\x05:\x01\x37\x12#\n\x16\x61\x64\x64itional_layer_depth\x18\x03 \x01(\x05:\x03\x32\x35\x36')
   ,
   dependencies=[object__detection_dot_protos_dot_anchor__generator__pb2.DESCRIPTOR,object__detection_dot_protos_dot_box__coder__pb2.DESCRIPTOR,object__detection_dot_protos_dot_box__predictor__pb2.DESCRIPTOR,object__detection_dot_protos_dot_hyperparams__pb2.DESCRIPTOR,object__detection_dot_protos_dot_image__resizer__pb2.DESCRIPTOR,object__detection_dot_protos_dot_losses__pb2.DESCRIPTOR,object__detection_dot_protos_dot_matcher__pb2.DESCRIPTOR,object__detection_dot_protos_dot_post__processing__pb2.DESCRIPTOR,object__detection_dot_protos_dot_region__similarity__calculator__pb2.DESCRIPTOR,])
+=======
+  serialized_pb=_b('\n!object_detection/protos/ssd.proto\x12\x17object_detection.protos\x1a.object_detection/protos/anchor_generator.proto\x1a\'object_detection/protos/box_coder.proto\x1a+object_detection/protos/box_predictor.proto\x1a)object_detection/protos/hyperparams.proto\x1a+object_detection/protos/image_resizer.proto\x1a%object_detection/protos/matcher.proto\x1a$object_detection/protos/losses.proto\x1a-object_detection/protos/post_processing.proto\x1a:object_detection/protos/region_similarity_calculator.proto\"\xfc\x04\n\x03Ssd\x12\x13\n\x0bnum_classes\x18\x01 \x01(\x05\x12<\n\rimage_resizer\x18\x02 \x01(\x0b\x32%.object_detection.protos.ImageResizer\x12G\n\x11\x66\x65\x61ture_extractor\x18\x03 \x01(\x0b\x32,.object_detection.protos.SsdFeatureExtractor\x12\x34\n\tbox_coder\x18\x04 \x01(\x0b\x32!.object_detection.protos.BoxCoder\x12\x31\n\x07matcher\x18\x05 \x01(\x0b\x32 .object_detection.protos.Matcher\x12R\n\x15similarity_calculator\x18\x06 \x01(\x0b\x32\x33.object_detection.protos.RegionSimilarityCalculator\x12<\n\rbox_predictor\x18\x07 \x01(\x0b\x32%.object_detection.protos.BoxPredictor\x12\x42\n\x10\x61nchor_generator\x18\x08 \x01(\x0b\x32(.object_detection.protos.AnchorGenerator\x12@\n\x0fpost_processing\x18\t \x01(\x0b\x32\'.object_detection.protos.PostProcessing\x12+\n\x1dnormalize_loss_by_num_matches\x18\n \x01(\x08:\x04true\x12+\n\x04loss\x18\x0b \x01(\x0b\x32\x1d.object_detection.protos.Loss\"\xd7\x01\n\x13SsdFeatureExtractor\x12\x0c\n\x04type\x18\x01 \x01(\t\x12\x1b\n\x10\x64\x65pth_multiplier\x18\x02 \x01(\x02:\x01\x31\x12\x15\n\tmin_depth\x18\x03 \x01(\x05:\x02\x31\x36\x12>\n\x10\x63onv_hyperparams\x18\x04 \x01(\x0b\x32$.object_detection.protos.Hyperparams\x12\x1a\n\x0fpad_to_multiple\x18\x05 \x01(\x05:\x01\x31\x12\"\n\x14\x62\x61tch_norm_trainable\x18\x06 \x01(\x08:\x04true')
+  ,
+  dependencies=[object__detection_dot_protos_dot_anchor__generator__pb2.DESCRIPTOR,object__detection_dot_protos_dot_box__coder__pb2.DESCRIPTOR,object__detection_dot_protos_dot_box__predictor__pb2.DESCRIPTOR,object__detection_dot_protos_dot_hyperparams__pb2.DESCRIPTOR,object__detection_dot_protos_dot_image__resizer__pb2.DESCRIPTOR,object__detection_dot_protos_dot_matcher__pb2.DESCRIPTOR,object__detection_dot_protos_dot_losses__pb2.DESCRIPTOR,object__detection_dot_protos_dot_post__processing__pb2.DESCRIPTOR,object__detection_dot_protos_dot_region__similarity__calculator__pb2.DESCRIPTOR,])
+>>>>>>> Stashed changes
 
 
 
 
+<<<<<<< Updated upstream
 _SSD_MASKHEAD = _descriptor.Descriptor(
   name='MaskHead',
   full_name='object_detection.protos.Ssd.MaskHead',
@@ -128,6 +140,8 @@ _SSD_MASKHEAD = _descriptor.Descriptor(
   serialized_end=1969,
 )
 
+=======
+>>>>>>> Stashed changes
 _SSD = _descriptor.Descriptor(
   name='Ssd',
   full_name='object_detection.protos.Ssd',
@@ -178,6 +192,7 @@ _SSD = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
+<<<<<<< Updated upstream
       name='encode_background_as_zeros', full_name='object_detection.protos.Ssd.encode_background_as_zeros', index=6,
       number=12, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
@@ -193,33 +208,49 @@ _SSD = _descriptor.Descriptor(
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='box_predictor', full_name='object_detection.protos.Ssd.box_predictor', index=8,
+=======
+      name='box_predictor', full_name='object_detection.protos.Ssd.box_predictor', index=6,
+>>>>>>> Stashed changes
       number=7, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
+<<<<<<< Updated upstream
       name='anchor_generator', full_name='object_detection.protos.Ssd.anchor_generator', index=9,
+=======
+      name='anchor_generator', full_name='object_detection.protos.Ssd.anchor_generator', index=7,
+>>>>>>> Stashed changes
       number=8, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
+<<<<<<< Updated upstream
       name='post_processing', full_name='object_detection.protos.Ssd.post_processing', index=10,
+=======
+      name='post_processing', full_name='object_detection.protos.Ssd.post_processing', index=8,
+>>>>>>> Stashed changes
       number=9, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
+<<<<<<< Updated upstream
       name='normalize_loss_by_num_matches', full_name='object_detection.protos.Ssd.normalize_loss_by_num_matches', index=11,
+=======
+      name='normalize_loss_by_num_matches', full_name='object_detection.protos.Ssd.normalize_loss_by_num_matches', index=9,
+>>>>>>> Stashed changes
       number=10, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=True,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
+<<<<<<< Updated upstream
       name='normalize_loc_loss_by_codesize', full_name='object_detection.protos.Ssd.normalize_loc_loss_by_codesize', index=12,
       number=14, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
@@ -228,11 +259,15 @@ _SSD = _descriptor.Descriptor(
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='loss', full_name='object_detection.protos.Ssd.loss', index=13,
+=======
+      name='loss', full_name='object_detection.protos.Ssd.loss', index=10,
+>>>>>>> Stashed changes
       number=11, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+<<<<<<< Updated upstream
     _descriptor.FieldDescriptor(
       name='freeze_batchnorm', full_name='object_detection.protos.Ssd.freeze_batchnorm', index=14,
       number=16, type=8, cpp_type=7, label=1,
@@ -293,6 +328,12 @@ _SSD = _descriptor.Descriptor(
   extensions=[
   ],
   nested_types=[_SSD_MASKHEAD, ],
+=======
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+>>>>>>> Stashed changes
   enum_types=[
   ],
   serialized_options=None,
@@ -302,7 +343,11 @@ _SSD = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=469,
+<<<<<<< Updated upstream
   serialized_end=1969,
+=======
+  serialized_end=1105,
+>>>>>>> Stashed changes
 )
 
 
@@ -342,6 +387,7 @@ _SSDFEATUREEXTRACTOR = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
+<<<<<<< Updated upstream
       name='override_base_feature_extractor_hyperparams', full_name='object_detection.protos.SsdFeatureExtractor.override_base_feature_extractor_hyperparams', index=4,
       number=9, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
@@ -350,12 +396,16 @@ _SSDFEATUREEXTRACTOR = _descriptor.Descriptor(
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='pad_to_multiple', full_name='object_detection.protos.SsdFeatureExtractor.pad_to_multiple', index=5,
+=======
+      name='pad_to_multiple', full_name='object_detection.protos.SsdFeatureExtractor.pad_to_multiple', index=4,
+>>>>>>> Stashed changes
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=1,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
+<<<<<<< Updated upstream
       name='use_explicit_padding', full_name='object_detection.protos.SsdFeatureExtractor.use_explicit_padding', index=6,
       number=7, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
@@ -432,6 +482,11 @@ _FEATUREPYRAMIDNETWORKS = _descriptor.Descriptor(
       name='additional_layer_depth', full_name='object_detection.protos.FeaturePyramidNetworks.additional_layer_depth', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=256,
+=======
+      name='batch_norm_trainable', full_name='object_detection.protos.SsdFeatureExtractor.batch_norm_trainable', index=5,
+      number=6, type=8, cpp_type=7, label=1,
+      has_default_value=True, default_value=True,
+>>>>>>> Stashed changes
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
@@ -447,12 +502,19 @@ _FEATUREPYRAMIDNETWORKS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
+<<<<<<< Updated upstream
   serialized_start=2425,
   serialized_end=2530,
 )
 
 _SSD_MASKHEAD.fields_by_name['conv_hyperparams'].message_type = object__detection_dot_protos_dot_hyperparams__pb2._HYPERPARAMS
 _SSD_MASKHEAD.containing_type = _SSD
+=======
+  serialized_start=1108,
+  serialized_end=1323,
+)
+
+>>>>>>> Stashed changes
 _SSD.fields_by_name['image_resizer'].message_type = object__detection_dot_protos_dot_image__resizer__pb2._IMAGERESIZER
 _SSD.fields_by_name['feature_extractor'].message_type = _SSDFEATUREEXTRACTOR
 _SSD.fields_by_name['box_coder'].message_type = object__detection_dot_protos_dot_box__coder__pb2._BOXCODER
@@ -462,6 +524,7 @@ _SSD.fields_by_name['box_predictor'].message_type = object__detection_dot_protos
 _SSD.fields_by_name['anchor_generator'].message_type = object__detection_dot_protos_dot_anchor__generator__pb2._ANCHORGENERATOR
 _SSD.fields_by_name['post_processing'].message_type = object__detection_dot_protos_dot_post__processing__pb2._POSTPROCESSING
 _SSD.fields_by_name['loss'].message_type = object__detection_dot_protos_dot_losses__pb2._LOSS
+<<<<<<< Updated upstream
 _SSD.fields_by_name['mask_head_config'].message_type = _SSD_MASKHEAD
 _SSDFEATUREEXTRACTOR.fields_by_name['conv_hyperparams'].message_type = object__detection_dot_protos_dot_hyperparams__pb2._HYPERPARAMS
 _SSDFEATUREEXTRACTOR.fields_by_name['fpn'].message_type = _FEATUREPYRAMIDNETWORKS
@@ -478,12 +541,23 @@ Ssd = _reflection.GeneratedProtocolMessageType('Ssd', (_message.Message,), dict(
     # @@protoc_insertion_point(class_scope:object_detection.protos.Ssd.MaskHead)
     ))
   ,
+=======
+_SSDFEATUREEXTRACTOR.fields_by_name['conv_hyperparams'].message_type = object__detection_dot_protos_dot_hyperparams__pb2._HYPERPARAMS
+DESCRIPTOR.message_types_by_name['Ssd'] = _SSD
+DESCRIPTOR.message_types_by_name['SsdFeatureExtractor'] = _SSDFEATUREEXTRACTOR
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+
+Ssd = _reflection.GeneratedProtocolMessageType('Ssd', (_message.Message,), dict(
+>>>>>>> Stashed changes
   DESCRIPTOR = _SSD,
   __module__ = 'object_detection.protos.ssd_pb2'
   # @@protoc_insertion_point(class_scope:object_detection.protos.Ssd)
   ))
 _sym_db.RegisterMessage(Ssd)
+<<<<<<< Updated upstream
 _sym_db.RegisterMessage(Ssd.MaskHead)
+=======
+>>>>>>> Stashed changes
 
 SsdFeatureExtractor = _reflection.GeneratedProtocolMessageType('SsdFeatureExtractor', (_message.Message,), dict(
   DESCRIPTOR = _SSDFEATUREEXTRACTOR,
@@ -492,6 +566,7 @@ SsdFeatureExtractor = _reflection.GeneratedProtocolMessageType('SsdFeatureExtrac
   ))
 _sym_db.RegisterMessage(SsdFeatureExtractor)
 
+<<<<<<< Updated upstream
 FeaturePyramidNetworks = _reflection.GeneratedProtocolMessageType('FeaturePyramidNetworks', (_message.Message,), dict(
   DESCRIPTOR = _FEATUREPYRAMIDNETWORKS,
   __module__ = 'object_detection.protos.ssd_pb2'
@@ -499,5 +574,7 @@ FeaturePyramidNetworks = _reflection.GeneratedProtocolMessageType('FeaturePyrami
   ))
 _sym_db.RegisterMessage(FeaturePyramidNetworks)
 
+=======
+>>>>>>> Stashed changes
 
 # @@protoc_insertion_point(module_scope)

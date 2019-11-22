@@ -19,7 +19,11 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='object_detection.protos',
   syntax='proto2',
   serialized_options=None,
+<<<<<<< Updated upstream
   serialized_pb=_b('\n:object_detection/protos/region_similarity_calculator.proto\x12\x17object_detection.protos\"\xde\x02\n\x1aRegionSimilarityCalculator\x12N\n\x16neg_sq_dist_similarity\x18\x01 \x01(\x0b\x32,.object_detection.protos.NegSqDistSimilarityH\x00\x12@\n\x0eiou_similarity\x18\x02 \x01(\x0b\x32&.object_detection.protos.IouSimilarityH\x00\x12@\n\x0eioa_similarity\x18\x03 \x01(\x0b\x32&.object_detection.protos.IoaSimilarityH\x00\x12W\n\x1athresholded_iou_similarity\x18\x04 \x01(\x0b\x32\x31.object_detection.protos.ThresholdedIouSimilarityH\x00\x42\x13\n\x11region_similarity\"\x15\n\x13NegSqDistSimilarity\"\x0f\n\rIouSimilarity\"\x0f\n\rIoaSimilarity\"6\n\x18ThresholdedIouSimilarity\x12\x1a\n\riou_threshold\x18\x01 \x01(\x02:\x03\x30.5')
+=======
+  serialized_pb=_b('\n:object_detection/protos/region_similarity_calculator.proto\x12\x17object_detection.protos\"\x85\x02\n\x1aRegionSimilarityCalculator\x12N\n\x16neg_sq_dist_similarity\x18\x01 \x01(\x0b\x32,.object_detection.protos.NegSqDistSimilarityH\x00\x12@\n\x0eiou_similarity\x18\x02 \x01(\x0b\x32&.object_detection.protos.IouSimilarityH\x00\x12@\n\x0eioa_similarity\x18\x03 \x01(\x0b\x32&.object_detection.protos.IoaSimilarityH\x00\x42\x13\n\x11region_similarity\"\x15\n\x13NegSqDistSimilarity\"\x0f\n\rIouSimilarity\"\x0f\n\rIoaSimilarity')
+>>>>>>> Stashed changes
 )
 
 
@@ -53,6 +57,7 @@ _REGIONSIMILARITYCALCULATOR = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+<<<<<<< Updated upstream
     _descriptor.FieldDescriptor(
       name='thresholded_iou_similarity', full_name='object_detection.protos.RegionSimilarityCalculator.thresholded_iou_similarity', index=3,
       number=4, type=11, cpp_type=10, label=1,
@@ -60,6 +65,8 @@ _REGIONSIMILARITYCALCULATOR = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+=======
+>>>>>>> Stashed changes
   ],
   extensions=[
   ],
@@ -76,7 +83,11 @@ _REGIONSIMILARITYCALCULATOR = _descriptor.Descriptor(
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=88,
+<<<<<<< Updated upstream
   serialized_end=438,
+=======
+  serialized_end=349,
+>>>>>>> Stashed changes
 )
 
 
@@ -99,8 +110,13 @@ _NEGSQDISTSIMILARITY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
+<<<<<<< Updated upstream
   serialized_start=440,
   serialized_end=461,
+=======
+  serialized_start=351,
+  serialized_end=372,
+>>>>>>> Stashed changes
 )
 
 
@@ -123,8 +139,13 @@ _IOUSIMILARITY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
+<<<<<<< Updated upstream
   serialized_start=463,
   serialized_end=478,
+=======
+  serialized_start=374,
+  serialized_end=389,
+>>>>>>> Stashed changes
 )
 
 
@@ -147,6 +168,7 @@ _IOASIMILARITY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
+<<<<<<< Updated upstream
   serialized_start=480,
   serialized_end=495,
 )
@@ -180,12 +202,19 @@ _THRESHOLDEDIOUSIMILARITY = _descriptor.Descriptor(
   ],
   serialized_start=497,
   serialized_end=551,
+=======
+  serialized_start=391,
+  serialized_end=406,
+>>>>>>> Stashed changes
 )
 
 _REGIONSIMILARITYCALCULATOR.fields_by_name['neg_sq_dist_similarity'].message_type = _NEGSQDISTSIMILARITY
 _REGIONSIMILARITYCALCULATOR.fields_by_name['iou_similarity'].message_type = _IOUSIMILARITY
 _REGIONSIMILARITYCALCULATOR.fields_by_name['ioa_similarity'].message_type = _IOASIMILARITY
+<<<<<<< Updated upstream
 _REGIONSIMILARITYCALCULATOR.fields_by_name['thresholded_iou_similarity'].message_type = _THRESHOLDEDIOUSIMILARITY
+=======
+>>>>>>> Stashed changes
 _REGIONSIMILARITYCALCULATOR.oneofs_by_name['region_similarity'].fields.append(
   _REGIONSIMILARITYCALCULATOR.fields_by_name['neg_sq_dist_similarity'])
 _REGIONSIMILARITYCALCULATOR.fields_by_name['neg_sq_dist_similarity'].containing_oneof = _REGIONSIMILARITYCALCULATOR.oneofs_by_name['region_similarity']
@@ -195,14 +224,20 @@ _REGIONSIMILARITYCALCULATOR.fields_by_name['iou_similarity'].containing_oneof = 
 _REGIONSIMILARITYCALCULATOR.oneofs_by_name['region_similarity'].fields.append(
   _REGIONSIMILARITYCALCULATOR.fields_by_name['ioa_similarity'])
 _REGIONSIMILARITYCALCULATOR.fields_by_name['ioa_similarity'].containing_oneof = _REGIONSIMILARITYCALCULATOR.oneofs_by_name['region_similarity']
+<<<<<<< Updated upstream
 _REGIONSIMILARITYCALCULATOR.oneofs_by_name['region_similarity'].fields.append(
   _REGIONSIMILARITYCALCULATOR.fields_by_name['thresholded_iou_similarity'])
 _REGIONSIMILARITYCALCULATOR.fields_by_name['thresholded_iou_similarity'].containing_oneof = _REGIONSIMILARITYCALCULATOR.oneofs_by_name['region_similarity']
+=======
+>>>>>>> Stashed changes
 DESCRIPTOR.message_types_by_name['RegionSimilarityCalculator'] = _REGIONSIMILARITYCALCULATOR
 DESCRIPTOR.message_types_by_name['NegSqDistSimilarity'] = _NEGSQDISTSIMILARITY
 DESCRIPTOR.message_types_by_name['IouSimilarity'] = _IOUSIMILARITY
 DESCRIPTOR.message_types_by_name['IoaSimilarity'] = _IOASIMILARITY
+<<<<<<< Updated upstream
 DESCRIPTOR.message_types_by_name['ThresholdedIouSimilarity'] = _THRESHOLDEDIOUSIMILARITY
+=======
+>>>>>>> Stashed changes
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 RegionSimilarityCalculator = _reflection.GeneratedProtocolMessageType('RegionSimilarityCalculator', (_message.Message,), dict(
@@ -233,6 +268,7 @@ IoaSimilarity = _reflection.GeneratedProtocolMessageType('IoaSimilarity', (_mess
   ))
 _sym_db.RegisterMessage(IoaSimilarity)
 
+<<<<<<< Updated upstream
 ThresholdedIouSimilarity = _reflection.GeneratedProtocolMessageType('ThresholdedIouSimilarity', (_message.Message,), dict(
   DESCRIPTOR = _THRESHOLDEDIOUSIMILARITY,
   __module__ = 'object_detection.protos.region_similarity_calculator_pb2'
@@ -240,5 +276,7 @@ ThresholdedIouSimilarity = _reflection.GeneratedProtocolMessageType('Thresholded
   ))
 _sym_db.RegisterMessage(ThresholdedIouSimilarity)
 
+=======
+>>>>>>> Stashed changes
 
 # @@protoc_insertion_point(module_scope)

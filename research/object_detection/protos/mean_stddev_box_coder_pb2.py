@@ -19,7 +19,11 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='object_detection.protos',
   syntax='proto2',
   serialized_options=None,
+<<<<<<< Updated upstream
   serialized_pb=_b('\n3object_detection/protos/mean_stddev_box_coder.proto\x12\x17object_detection.protos\"*\n\x12MeanStddevBoxCoder\x12\x14\n\x06stddev\x18\x01 \x01(\x02:\x04\x30.01')
+=======
+  serialized_pb=_b('\n3object_detection/protos/mean_stddev_box_coder.proto\x12\x17object_detection.protos\"\x14\n\x12MeanStddevBoxCoder')
+>>>>>>> Stashed changes
 )
 
 
@@ -32,6 +36,7 @@ _MEANSTDDEVBOXCODER = _descriptor.Descriptor(
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
+<<<<<<< Updated upstream
     _descriptor.FieldDescriptor(
       name='stddev', full_name='object_detection.protos.MeanStddevBoxCoder.stddev', index=0,
       number=1, type=2, cpp_type=6, label=1,
@@ -39,6 +44,8 @@ _MEANSTDDEVBOXCODER = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+=======
+>>>>>>> Stashed changes
   ],
   extensions=[
   ],
@@ -52,7 +59,11 @@ _MEANSTDDEVBOXCODER = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=80,
+<<<<<<< Updated upstream
   serialized_end=122,
+=======
+  serialized_end=100,
+>>>>>>> Stashed changes
 )
 
 DESCRIPTOR.message_types_by_name['MeanStddevBoxCoder'] = _MEANSTDDEVBOXCODER

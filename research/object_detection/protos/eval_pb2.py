@@ -19,7 +19,11 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='object_detection.protos',
   syntax='proto2',
   serialized_options=None,
+<<<<<<< Updated upstream
   serialized_pb=_b('\n\"object_detection/protos/eval.proto\x12\x17object_detection.protos\"\x8f\x07\n\nEvalConfig\x12\x15\n\nbatch_size\x18\x19 \x01(\r:\x01\x31\x12\x1e\n\x12num_visualizations\x18\x01 \x01(\r:\x02\x31\x30\x12\x1e\n\x0cnum_examples\x18\x02 \x01(\r:\x04\x35\x30\x30\x30\x42\x02\x18\x01\x12\x1f\n\x12\x65val_interval_secs\x18\x03 \x01(\r:\x03\x33\x30\x30\x12\x18\n\tmax_evals\x18\x04 \x01(\r:\x01\x30\x42\x02\x18\x01\x12\x19\n\nsave_graph\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\"\n\x18visualization_export_dir\x18\x06 \x01(\t:\x00\x12\x15\n\x0b\x65val_master\x18\x07 \x01(\t:\x00\x12\x13\n\x0bmetrics_set\x18\x08 \x03(\t\x12\x15\n\x0b\x65xport_path\x18\t \x01(\t:\x00\x12!\n\x12ignore_groundtruth\x18\n \x01(\x08:\x05\x66\x61lse\x12\"\n\x13use_moving_averages\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\"\n\x13\x65val_instance_masks\x18\x0c \x01(\x08:\x05\x66\x61lse\x12 \n\x13min_score_threshold\x18\r \x01(\x02:\x03\x30.5\x12&\n\x1amax_num_boxes_to_visualize\x18\x0e \x01(\x05:\x02\x32\x30\x12\x1a\n\x0bskip_scores\x18\x0f \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bskip_labels\x18\x10 \x01(\x08:\x05\x66\x61lse\x12*\n\x1bvisualize_groundtruth_boxes\x18\x11 \x01(\x08:\x05\x66\x61lse\x12\x32\n#groundtruth_box_visualization_color\x18\x12 \x01(\t:\x05\x62lack\x12\x35\n&keep_image_id_for_visualization_export\x18\x13 \x01(\x08:\x05\x66\x61lse\x12$\n\x16retain_original_images\x18\x17 \x01(\x08:\x04true\x12+\n\x1cinclude_metrics_per_category\x18\x18 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x12recall_lower_bound\x18\x1a \x01(\x02:\x01\x30\x12\x1d\n\x12recall_upper_bound\x18\x1b \x01(\x02:\x01\x31\x12\x38\n)retain_original_image_additional_channels\x18\x1c \x01(\x08:\x05\x66\x61lse\x12\x1e\n\x0f\x66orce_no_resize\x18\x1d \x01(\x08:\x05\x66\x61lse')
+=======
+  serialized_pb=_b('\n\"object_detection/protos/eval.proto\x12\x17object_detection.protos\"\x80\x03\n\nEvalConfig\x12\x1e\n\x12num_visualizations\x18\x01 \x01(\r:\x02\x31\x30\x12\x1a\n\x0cnum_examples\x18\x02 \x01(\r:\x04\x35\x30\x30\x30\x12\x1f\n\x12\x65val_interval_secs\x18\x03 \x01(\r:\x03\x33\x30\x30\x12\x14\n\tmax_evals\x18\x04 \x01(\r:\x01\x30\x12\x19\n\nsave_graph\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\"\n\x18visualization_export_dir\x18\x06 \x01(\t:\x00\x12\x15\n\x0b\x65val_master\x18\x07 \x01(\t:\x00\x12\'\n\x0bmetrics_set\x18\x08 \x01(\t:\x12pascal_voc_metrics\x12\x15\n\x0b\x65xport_path\x18\t \x01(\t:\x00\x12!\n\x12ignore_groundtruth\x18\n \x01(\x08:\x05\x66\x61lse\x12\"\n\x13use_moving_averages\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\"\n\x13\x65val_instance_masks\x18\x0c \x01(\x08:\x05\x66\x61lse')
+>>>>>>> Stashed changes
 )
 
 
@@ -33,6 +37,7 @@ _EVALCONFIG = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
+<<<<<<< Updated upstream
       name='batch_size', full_name='object_detection.protos.EvalConfig.batch_size', index=0,
       number=25, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=1,
@@ -41,88 +46,142 @@ _EVALCONFIG = _descriptor.Descriptor(
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='num_visualizations', full_name='object_detection.protos.EvalConfig.num_visualizations', index=1,
+=======
+      name='num_visualizations', full_name='object_detection.protos.EvalConfig.num_visualizations', index=0,
+>>>>>>> Stashed changes
       number=1, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=10,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
+<<<<<<< Updated upstream
       name='num_examples', full_name='object_detection.protos.EvalConfig.num_examples', index=2,
+=======
+      name='num_examples', full_name='object_detection.protos.EvalConfig.num_examples', index=1,
+>>>>>>> Stashed changes
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=5000,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
+<<<<<<< Updated upstream
       serialized_options=_b('\030\001'), file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='eval_interval_secs', full_name='object_detection.protos.EvalConfig.eval_interval_secs', index=3,
+=======
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='eval_interval_secs', full_name='object_detection.protos.EvalConfig.eval_interval_secs', index=2,
+>>>>>>> Stashed changes
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=300,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
+<<<<<<< Updated upstream
       name='max_evals', full_name='object_detection.protos.EvalConfig.max_evals', index=4,
+=======
+      name='max_evals', full_name='object_detection.protos.EvalConfig.max_evals', index=3,
+>>>>>>> Stashed changes
       number=4, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
+<<<<<<< Updated upstream
       serialized_options=_b('\030\001'), file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='save_graph', full_name='object_detection.protos.EvalConfig.save_graph', index=5,
+=======
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='save_graph', full_name='object_detection.protos.EvalConfig.save_graph', index=4,
+>>>>>>> Stashed changes
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
+<<<<<<< Updated upstream
       name='visualization_export_dir', full_name='object_detection.protos.EvalConfig.visualization_export_dir', index=6,
+=======
+      name='visualization_export_dir', full_name='object_detection.protos.EvalConfig.visualization_export_dir', index=5,
+>>>>>>> Stashed changes
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
+<<<<<<< Updated upstream
       name='eval_master', full_name='object_detection.protos.EvalConfig.eval_master', index=7,
+=======
+      name='eval_master', full_name='object_detection.protos.EvalConfig.eval_master', index=6,
+>>>>>>> Stashed changes
       number=7, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
+<<<<<<< Updated upstream
       name='metrics_set', full_name='object_detection.protos.EvalConfig.metrics_set', index=8,
       number=8, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
+=======
+      name='metrics_set', full_name='object_detection.protos.EvalConfig.metrics_set', index=7,
+      number=8, type=9, cpp_type=9, label=1,
+      has_default_value=True, default_value=_b("pascal_voc_metrics").decode('utf-8'),
+>>>>>>> Stashed changes
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
+<<<<<<< Updated upstream
       name='export_path', full_name='object_detection.protos.EvalConfig.export_path', index=9,
+=======
+      name='export_path', full_name='object_detection.protos.EvalConfig.export_path', index=8,
+>>>>>>> Stashed changes
       number=9, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
+<<<<<<< Updated upstream
       name='ignore_groundtruth', full_name='object_detection.protos.EvalConfig.ignore_groundtruth', index=10,
+=======
+      name='ignore_groundtruth', full_name='object_detection.protos.EvalConfig.ignore_groundtruth', index=9,
+>>>>>>> Stashed changes
       number=10, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
+<<<<<<< Updated upstream
       name='use_moving_averages', full_name='object_detection.protos.EvalConfig.use_moving_averages', index=11,
+=======
+      name='use_moving_averages', full_name='object_detection.protos.EvalConfig.use_moving_averages', index=10,
+>>>>>>> Stashed changes
       number=11, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
+<<<<<<< Updated upstream
       name='eval_instance_masks', full_name='object_detection.protos.EvalConfig.eval_instance_masks', index=12,
+=======
+      name='eval_instance_masks', full_name='object_detection.protos.EvalConfig.eval_instance_masks', index=11,
+>>>>>>> Stashed changes
       number=12, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+<<<<<<< Updated upstream
     _descriptor.FieldDescriptor(
       name='min_score_threshold', full_name='object_detection.protos.EvalConfig.min_score_threshold', index=13,
       number=13, type=2, cpp_type=6, label=1,
@@ -214,6 +273,8 @@ _EVALCONFIG = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+=======
+>>>>>>> Stashed changes
   ],
   extensions=[
   ],
@@ -227,7 +288,11 @@ _EVALCONFIG = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=64,
+<<<<<<< Updated upstream
   serialized_end=975,
+=======
+  serialized_end=448,
+>>>>>>> Stashed changes
 )
 
 DESCRIPTOR.message_types_by_name['EvalConfig'] = _EVALCONFIG
@@ -241,6 +306,9 @@ EvalConfig = _reflection.GeneratedProtocolMessageType('EvalConfig', (_message.Me
 _sym_db.RegisterMessage(EvalConfig)
 
 
+<<<<<<< Updated upstream
 _EVALCONFIG.fields_by_name['num_examples']._options = None
 _EVALCONFIG.fields_by_name['max_evals']._options = None
+=======
+>>>>>>> Stashed changes
 # @@protoc_insertion_point(module_scope)
